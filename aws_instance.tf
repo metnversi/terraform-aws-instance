@@ -1,4 +1,4 @@
-/*
+
 resource "aws_instance" "app_server" {
   ami           = "ami-0d6857b844e855670"
   instance_type = "t2.micro"
@@ -10,4 +10,3 @@ resource "aws_instance" "app_server" {
     Name = var.instance_name
   }
 }
-*/

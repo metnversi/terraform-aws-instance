@@ -2,13 +2,13 @@ terraform {
   cloud {
     organization = "metnversi-org"
     workspaces {
-      name = "learn-terraform-aws"
+      name = "terraform-aws-instance"
     }
   }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.16"
+      version = "5.62.0"
     }
     tls = {
       source = "hashicorp/tls"
@@ -20,6 +20,9 @@ terraform {
 provider "aws" {
   region = "ap-southeast-2"
 }
+
+
+
 
 
 

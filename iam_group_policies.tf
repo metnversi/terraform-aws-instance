@@ -36,7 +36,7 @@ resource "aws_iam_group_policy_attachment" "queue_read_only" {
     policy_arn = "arn:aws:iam::aws:policy/ReadOnlyAccess"
 }
 
-/*
+
 resource "aws_iam_user" "new_user" {
     name = "new_user"
     path = "/system/"
@@ -46,7 +46,6 @@ resource "aws_iam_user_group_membership" "new_user_membership" {
     user = aws_iam_user.new_user.name
 
     groups = [
-        aws_iam_group.queuing.name,
+        aws_iam_group.queue.name,
     ]
 }
-*/
