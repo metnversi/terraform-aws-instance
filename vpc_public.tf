@@ -44,7 +44,7 @@ resource "aws_security_group_rule" "allow_ssh" {
   from_port         = 22
   to_port           = 22
   protocol          = "tcp"
-  cidr_blocks       = ["171.241.9.17/32"]
+  cidr_blocks       = ["x.x.x.x/32"]
   security_group_id = aws_security_group.public.id
 }
 
