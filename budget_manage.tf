@@ -24,7 +24,7 @@ resource "aws_budgets_budget" "ec2" {
 }
 resource "aws_budgets_budget" "cost" {
   budget_type  = "COST"
-  limit_amount = "100"
+  limit_amount = "2"
   limit_unit   = "USD"
 
   time_period_end   = "2087-06-15_00:00"

@@ -2,7 +2,7 @@
 module inbound for security group
 *********************
 *********************
-*/
+
 
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
@@ -22,3 +22,5 @@ resource "aws_security_group" "allow_ssh" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+*/
+
